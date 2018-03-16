@@ -178,14 +178,14 @@ $('.buttons .btn').click(event => {
         game.pushButton(val);
     }
 });
-$('.buttons .btn').mousedown(event => {
+$('.buttons .btn').on('mousedown touchstart' ,event => {
     if (game.isActive()) {
         let id = $(event.target).attr('value');
         $(`#btn-${id}`).addClass(`b${id}`);
         playTone(gainNodes[id]);
     }
 });
-$('.buttons .btn').on('mouseup mouseleave', event => {
+$('.buttons .btn').on('mouseup mouseleave touchcancel', event => {
     if (game.isActive()) {
         let id = $(event.target).attr('value');
         $(`#btn-${id}`).removeClass(`b${id}`);
