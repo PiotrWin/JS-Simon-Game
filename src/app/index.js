@@ -167,10 +167,10 @@ $('#strict').click(() => {
     }
 });
 $('#reset').click(() => {
-    //if (game.isActive()) {
+    if (game.isActive()) {
         game.reset();
         $('#play').attr('disabled', false);
-    //}
+    }
 });
 $('.buttons .btn').click(event => {
     if (game.isActive()) {
