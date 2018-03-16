@@ -1,10 +1,5 @@
  /*jshint -W056*/  /*jshint -W083*/
 
-// TODO
-// - play->click->disabled
-// - reset->click-> play enabled
-// - game over -> play enabled
-
 "use strict";
 
 $(document).ready(() => {
@@ -16,7 +11,7 @@ let timeoutMisc = 1000;
 
 let game = {
     started: false,
-    strict: true,
+    strict: false,
     active: false,
     sequence: [],
     pressed: [],
@@ -105,7 +100,7 @@ let game = {
                 setTimeout(() => {
                     this.sequence.push(random(0, 3));
                     $('#counter').text(this.sequence.length);
-                    if (this.pushCount == 1) {
+                    if (this.pushCount == 20) {
                         $('#gameover').css({'visibility': 'visible'}).hide().fadeIn(750);
                         $('#counter').text('--');
                         setTimeout(() => {
@@ -126,11 +121,15 @@ let game = {
             $('#counter').text('!!');
             playTone(gainNodeWrong);
             setTimeout(() => {
-                $('#counter').text(this.sequence.length);
+                if (this.sequence.length == 0)
+                    $('#counter').text('--');
+                else if (this.started)
+                    $('#counter').text(this.sequence.length);
                 stopTone(gainNodeWrong);
-                if (this.strict)
+                if (this.strict && this.started)
                     this.restart();
-                this.play();
+                if (this.started)
+                    this.play();
             }, 1000);
         }
     },
@@ -168,10 +167,10 @@ $('#strict').click(() => {
     }
 });
 $('#reset').click(() => {
-    if (game.isActive()) {
+    //if (game.isActive()) {
         game.reset();
         $('#play').attr('disabled', false);
-    }
+    //}
 });
 $('.buttons .btn').click(event => {
     if (game.isActive()) {
