@@ -1,0 +1,173 @@
+body {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  background-color: #1c1c1c;
+  background-image: url("img/stardust.png");
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.wrapper {
+  background-image: url("img/retina_wood.png");
+  margin-top: 2%;
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 2%;
+  padding: 3% 2% 3% 2%;
+  -webkit-box-shadow: 0px 0px 40px 4px black !important;
+  -moz-box-shadow: 0px 0px 40px 4px black !important;
+  box-shadow: 0px 0px 40px 4px black !important; }
+  .wrapper #strict-ticker {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: auto;
+    background-color: red;
+    background: #5b0000;
+    background: -moz-radial-gradient(center, ellipse cover, #5b0000 0%, #5b0000 0%, #930000 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #5b0000 0%, #5b0000 0%, #930000 100%);
+    background: radial-gradient(ellipse at center, #5b0000 0%, #5b0000 0%, #930000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0000', endColorstr='#930000',GradientType=1 );
+    border-style: solid;
+    border-radius: 100%;
+    margin-bottom: -2%;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75) !important; }
+  .wrapper .activated {
+    background: #5b0000 !important;
+    background: -moz-radial-gradient(center, ellipse cover, #5b0000 0%, red 0%, #a30000 100%) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, #5b0000 0%, red 0%, #a30000 100%) !important;
+    background: radial-gradient(ellipse at center, #5b0000 0%, red 0%, #a30000 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0000', endColorstr='#a30000',GradientType=1 ) !important; }
+  .wrapper #counter {
+    width: 5vw;
+    margin: auto;
+    margin-bottom: -2%;
+    border-style: solid;
+    border-radius: 10%;
+    background-color: #492300;
+    background-image: url("img/otis-redding.png");
+    font-family: "Graduate";
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    border: none;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important; }
+
+.buttons {
+  background-color: #7a2b00;
+  background-image: url("img/buttons-back.png");
+  border-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 5% 0;
+  padding: 2% 1% 2% 1%;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important; }
+  .buttons .btn {
+    width: 25%;
+    background-image: url("img/otis-redding.png");
+    height: 5VW;
+    margin: 0 1% 0 1%;
+    border-style: none;
+    border-radius: 5%; }
+    .buttons .btn:focus, .buttons .btn:active {
+      outline: none !important; }
+  .buttons #btn-0 {
+    background-color: #FFC107;
+    background-image: url("img/buttons.png");
+    -webkit-box-shadow: inset 0px 0px 5px -1px black !important;
+    -moz-box-shadow: inset 0px 0px 5px -1px black !important;
+    box-shadow: inset 0px 0px 5px -1px black !important; }
+  .buttons #btn-1 {
+    background-color: #BF360C;
+    background-image: url("img/buttons.png");
+    -webkit-box-shadow: inset 0px 0px 9px -1px black !important;
+    -moz-box-shadow: inset 0px 0px 9px -1px black !important;
+    box-shadow: inset 0px 0px 9px -1px black !important; }
+  .buttons #btn-2 {
+    background-color: #33691E;
+    background-image: url("img/buttons.png");
+    -webkit-box-shadow: inset 0px 0px 9px -2px black !important;
+    -moz-box-shadow: inset 0px 0px 9px -2px black !important;
+    box-shadow: inset 0px 0px 9px -2px black !important; }
+  .buttons #btn-3 {
+    background-color: #3F51B5;
+    background-image: url("img/buttons.png");
+    -webkit-box-shadow: inset 0px 0px 9px -2px rgba(0, 0, 0, 0.8) !important;
+    -moz-box-shadow: inset 0px 0px 9px -2px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: inset 0px 0px 9px -2px rgba(0, 0, 0, 0.8) !important; }
+  .buttons .b0 {
+    background-color: #EEFF41 !important; }
+  .buttons .b1 {
+    background-color: #FF5722 !important; }
+  .buttons .b2 {
+    background-color: #33ba00 !important; }
+  .buttons .b3 {
+    background-color: #00B0FF !important; }
+
+.controls {
+  width: 100%;
+  font-size: 2.3vw; }
+  .controls .btn {
+    width: 13vw;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 60% !important;
+    text-align: center;
+    background-color: #f9cf8e;
+    background-image: url("img/otis-redding.png");
+    transition-duration: 0.05s;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75) !important; }
+    .controls .btn:focus, .controls .btn:active {
+      outline: none !important;
+      border-style: solid !important;
+      border-color: black !important;
+      border-width: 1px !important;
+      -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75) !important;
+      -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75) !important;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75) !important;
+      background-image: url("img/otis-redding.png") !important; }
+    .controls .btn:not(:active) {
+      outline: none !important;
+      -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75) !important;
+      -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75) !important;
+      box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75) !important;
+      background-image: url("img/otis-redding.png") !important; }
+  .controls .btn-primary {
+    background-color: #492300 !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black; }
+    .controls .btn-primary:focus, .controls .btn-primary:active {
+      outline: none !important;
+      border-style: solid !important;
+      border-color: black !important;
+      border-width: 1px !important;
+      -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75) !important;
+      -moz-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75) !important;
+      box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.75) !important;
+      background-image: url("img/otis-redding.png") !important; }
+    .controls .btn-primary:not(:active) {
+      outline: none !important;
+      -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75) !important;
+      -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75) !important;
+      box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75) !important;
+      background-image: url("img/otis-redding.png") !important; }
+
+#gameover {
+  font-weight: bold;
+  font-size: 2.5vw;
+  margin-bottom: 0;
+  margin-top: 3%;
+  color: white;
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

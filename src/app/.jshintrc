@@ -1,0 +1,14 @@
+{
+  "esversion": 6,
+  "globals": {
+        "$": false,
+        "console": false,
+        "setTimeout": false,
+        "event": false,
+        "document": false,
+        "window": false,
+        "contect": false,
+        "async": false
+    },
+  "strict" : "global"
+}

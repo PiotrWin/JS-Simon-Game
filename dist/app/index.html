@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simon Game</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:500" rel="stylesheet">
+        <script src="jquery/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <div id="gameover" class="text-center">Congratulations! You won!</div>
+        <div class="wrapper text-center">
+            <div id="counter"></div>
+            <div class="buttons">
+                <button class="btn" value="0" id="btn-0"></button>
+                <button class="btn" value="1" id="btn-1"></button>
+                <button class="btn" value="2" id="btn-2"></button>
+                <button class="btn" value="3" id="btn-3"></button>
+            </div>
+            <div class="controls">
+                <div id="strict-ticker"></div>
+                <button class="btn" id="strict">Strict</button><br>
+                <button class="btn btn-primary" id="play">Play</button>
+                <button class="btn btn-primary" id="reset">Reset</button>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>

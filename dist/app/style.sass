@@ -1,0 +1,167 @@
+$color-btn0-h: #EEFF41
+$color-btn1-h: #FF5722
+$color-btn2-h: #33ba00
+$color-btn3-h: #00B0FF
+$color-btn0: #FFC107
+$color-btn1: #BF360C
+$color-btn2: #33691E
+$color-btn3: #3F51B5
+$color-btn-control: #f9cf8e
+$color-btn-control-light: #ffebce
+$details-brown: #6D4C41
+$background: #1c1c1c
+$details-one: #492300
+$details-dark: #2b1400
+$background-img-body: url("img/stardust.png")
+$background-img-board: url("img/retina_wood.png")
+$background-img-buttons: url("img/buttons.png")
+$background-img-buttonboard: url("img/buttons-back.png")
+$background-img-details: url("img/otis-redding.png")
+
+=shadow($x, $y, $blur, $spread, $alpha)
+    -webkit-box-shadow: $x $y $blur $spread rgba(0,0,0,$alpha) !important
+    -moz-box-shadow: $x $y $blur $spread rgba(0,0,0,$alpha) !important
+    box-shadow: $x $y $blur $spread rgba(0,0,0,$alpha) !important
+=shadow-inset($x, $y, $blur, $spread, $alpha)
+    -webkit-box-shadow: inset $x $y $blur $spread rgba(0,0,0,$alpha) !important
+    -moz-box-shadow: inset $x $y $blur $spread rgba(0,0,0,$alpha) !important
+    box-shadow: inset $x $y $blur $spread rgba(0,0,0,$alpha) !important
+
+=button-push
+    &:focus, &:active
+        outline: none !important
+        border-style: solid !important
+        border-color: black !important
+        border-width: 1px  !important
+        +shadow(0px, 0px, 2px, 1px, 0.75)
+        background-image: $background-img-details !important
+    &:not(:active)
+        outline: none !important
+        +shadow(0px, 0px, 8px, 2px, 0.75)
+        background-image: $background-img-details !important
+
+body
+    font-family: 'IBM Plex Sans Condensed', sans-serif
+    background-color: $background
+    background-image: $background-img-body
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+.wrapper
+    background-image: $background-img-board
+    margin-top: 2%
+    margin-left: 25%
+    width: 50%
+    height: 50%
+    border-radius: 2%
+    padding: 3% 2% 3% 2%
+    +shadow(0px, 0px, 40px, 4px, 1)
+    #strict-ticker
+        width: 1.5vw
+        height: 1.5vw
+        margin: auto
+        background-color: red
+        background: rgb(91,0,0)
+        background: -moz-radial-gradient(center, ellipse cover, rgba(91,0,0,1) 0%, rgba(91,0,0,1) 0%, rgba(147,0,0,1) 100%)
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(91,0,0,1) 0%,rgba(91,0,0,1) 0%,rgba(147,0,0,1) 100%)
+        background: radial-gradient(ellipse at center, rgba(91,0,0,1) 0%,rgba(91,0,0,1) 0%,rgba(147,0,0,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0000', endColorstr='#930000',GradientType=1 )
+        border-style: solid
+        border-radius: 100%
+        margin-bottom: -2%
+        +shadow(0px, 0px, 6px, 1px, 0.75)
+    .activated
+        background: rgb(91,0,0) !important
+        background: -moz-radial-gradient(center, ellipse cover, rgba(91,0,0,1) 0%, rgba(255,0,0,1) 0%, rgba(163,0,0,1) 100%) !important
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(91,0,0,1) 0%,rgba(255,0,0,1) 0%,rgba(163,0,0,1) 100%) !important
+        background: radial-gradient(ellipse at center, rgba(91,0,0,1) 0%,rgba(255,0,0,1) 0%,rgba(163,0,0,1) 100%) !important
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0000', endColorstr='#a30000',GradientType=1 ) !important
+    #counter
+        width: 5vw
+        margin: auto
+        margin-bottom: -2%
+        border-style: solid
+        border-radius: 10%
+        background-color: $details-one
+        background-image: $background-img-details
+        font-family: 'Graduate'
+        font-size: 2vw
+        font-weight: bold
+        color: white
+        border: none
+        +shadow(0px, 0px, 10px, 2px, 0.75)
+.buttons
+    background-color: #7a2b00
+    background-image: $background-img-buttonboard
+    border-style: none
+    display: flex
+    justify-content: center
+    margin: 5% 0 5% 0
+    padding: 2% 1% 2% 1%
+    +shadow(0px, 0px, 10px, 2px, 0.75)
+    .btn
+        width: 25%
+        background-image: $background-img-details
+        height: 5VW
+        margin: 0 1% 0 1%
+        border-style: none
+        border-radius: 5%
+        &:focus, &:active
+            outline: none !important
+    #btn-0
+        background-color: $color-btn0
+        background-image: $background-img-buttons
+        +shadow-inset(0px, 0px, 5px, -1px, 1)
+    #btn-1
+        background-color: $color-btn1
+        background-image: $background-img-buttons
+        +shadow-inset(0px, 0px, 9px, -1px, 1)
+    #btn-2
+        background-color: $color-btn2
+        background-image: $background-img-buttons
+        +shadow-inset(0px, 0px, 9px, -2px, 1)
+    #btn-3
+        background-color: $color-btn3
+        background-image: $background-img-buttons
+        +shadow-inset(0px, 0px, 9px, -2px, 0.8)
+    .b0
+        background-color: $color-btn0-h !important
+    .b1
+        background-color: $color-btn1-h !important
+    .b2
+        background-color: $color-btn2-h !important
+    .b3
+        background-color: $color-btn3-h !important
+
+.controls
+    //font-family: 'IBM Plex Sans Condensed', sans-serif
+    width: 100%
+    font-size: 2.3vw
+    .btn
+        width: 13vw
+        margin-top: 3%
+        margin-left: 1%
+        margin-right: 1%
+        font-size: 60% !important
+        text-align: center
+        background-color: $color-btn-control
+        background-image: $background-img-details
+        transition-duration: 0.05s
+        +shadow(0px, 0px, 10px, 2px, 0.75)
+        +button-push
+    .btn-primary
+        background-color: $details-one !important
+        border-style: solid
+        border-width: 1px
+        border-color: black
+        +button-push
+
+#gameover
+    font-weight: bold
+    font-size: 2.5vw
+    margin-bottom: 0
+    margin-top: 3%
+    color: white
+    visibility: hidden
